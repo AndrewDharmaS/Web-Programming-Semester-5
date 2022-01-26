@@ -45,7 +45,7 @@
                                 @if ($transaction->status == 'declined')
                                     <td class="proof">-</td>
                                 @else
-                                    @if ($transaction->status == 'Pending' || $transaction->status == 'declined' || $transaction->status == 'canceled')
+                                    @if ($transaction->status == 'Pending' || $transaction->status == 'pending' || $transaction->status == 'declined' || $transaction->status == 'canceled')
                                         <td class="proof">-</td>
                                     @else
                                         <td class="proof"><a href="{{ asset('assets/images/transaction/'.$transaction->proof) }}" target="_blank">Lihat</a></td>
